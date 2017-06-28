@@ -8,8 +8,8 @@ export class GithubService {
 
   constructor(private http : Http) { }
 
-  getUsers(searchText):Observable<any>{
-    const url = "https://api.github.com/search/users?q="+searchText;
+  getUsers(searchText, pageNumber, per_page):Observable<any>{
+    const url = "https://api.github.com/search/users?q="+searchText+"&page="+pageNumber+"&per_page="+per_page;
     return this.http.get(url).map(
       res => {
         const data = res.json();
