@@ -1,0 +1,16 @@
+.card-avatar {
+    width: 200px;
+    margin: 20px;
+    display: inline-block;
+
+
+}
+
+.container {
+    text-align: center;
+}
+
+.card-head {
+    justify-content: center;
+    font-weight: bold;
+}
